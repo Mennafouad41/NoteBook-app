@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".RegisterationActivity">
+
+    <TextView
+        android:id="@+id/Notebad_text_view"
+        android:layout_width="361dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="NoteBad"
+        android:textColor="#E91E63"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/Registeration_text_view"
+        android:layout_width="444dp"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:text="Registeration Form"
+        android:textColor="#E91E63"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Notebad_text_view"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <EditText
+        android:id="@+id/username_edit_texit"
+        android:layout_width="544dp"
+        android:layout_height="83dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="text"
+        android:textColorHint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Registeration_text_view"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="544dp"
+        android:layout_height="83dp"
+        android:ems="10"
+        android:inputType="textWebEmailAddress"
+        android:textColorHint="@color/purple_700"
+        android:hint="Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_edit_texit"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <EditText
+        android:id="@+id/pasword_edit_text"
+        android:layout_width="544dp"
+        android:layout_height="83dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple_700"
+        android:hint="Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_edit_text"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/Register_button"
+        android:layout_width="280dp"
+        android:layout_height="99dp"
+        android:layout_margin="50dp"
+        android:backgroundTint="#E91E63"
+        android:text="Register"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pasword_edit_text"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/login_text_view"
+        android:layout_width="389dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="Aready have an account ? Log-In"
+        android:textColor="@color/purple_700"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_button"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

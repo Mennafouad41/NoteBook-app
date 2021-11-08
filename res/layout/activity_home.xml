@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".HomeActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notepad_recycleview"
+        android:layout_width="831dp"
+        android:layout_height="573dp"
+        android:layout_weight="3"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="915dp"
+        android:layout_height="213dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/purple_200"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="490dp"
+        android:layout_height="68dp"
+        android:background="#E91E63"
+        android:onClick="AddNote"
+        android:text="Add-Note"
+        android:textColor="@color/white"
+        android:textColorHint="#9C27B0"
+        app:backgroundTint="#FF9C27B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="351dp"
+        android:layout_height="98dp"
+        android:gravity="center"
+        android:text="NoteBad"
+        android:textColor="@color/white"
+        android:textSize="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="526dp"
+        android:layout_height="67dp"
+        android:background="#E91E63"
+        android:onClick="logout"
+        android:text="Log-Out"
+        android:textColor="@color/white"
+        app:backgroundTint="#FFFFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.932" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
