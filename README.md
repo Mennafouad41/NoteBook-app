@@ -1,1 +1,1 @@
-NoteBook app
+This application about ceating notes from the user then saving this notes usin firebase, first the user log in or register to the app, then select create note option, after that select the date and time of the note, finally the notification for this note is created, and this note is saved.
